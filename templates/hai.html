@@ -1,0 +1,28 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        background:linear-gradient(45deg,orange,white,green);
+    }
+</style>
+<body>
+    <h1><marquee>THE GREAT ROYAL BENGAL TIGER</marquee> </h1>
+    <center>
+    <img src="{% static 'kushi.jpg' %}">
+    <p>kushi is a tollywood movie of pavan kalyan  and bhoomika</p>
+    </center>
+    <form action="madhu" method="POST">
+        enter your name: <input type="text" name='name'><br><br>
+        choose the ticket:<input type="radio" name='r1'>low class<br>
+                          <input type="radio" name='r1'>higher class 
+    
+    </form>
+</body>
+</html>
